@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <ImageView
+        android:id="@+id/main_logo"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:src="@mipmap/main_logo_foreground"
+        android:contentDescription="@string/app_name" />
+
+    <EditText
+        android:id="@+id/login_email_et"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:background="@drawable/edit_text_main"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:textColor="@color/black"
+        android:textColorHint="@color/main_light_blue"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:autofillHints="emailAddress" />
+
+    <EditText
+        android:id="@+id/login_password_et"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/edit_text_main"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:textColor="@color/black"
+        android:textColorHint="@color/main_light_blue"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:autofillHints="emailAddress" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_main_filled"
+        android:text="@string/signup"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:textColor="@color/main_white"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:text="@string/dont_have_account"
+        android:textColor="@color/main_light_blue"/>
+
+    <TextView
+        android:id="@+id/login_signup_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="@string/signup_here"
+        android:textColor="@color/main_light_blue"/>
+
+
+
+</LinearLayout>
